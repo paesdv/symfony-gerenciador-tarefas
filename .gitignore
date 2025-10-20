@@ -1,8 +1,16 @@
-
 ###> symfony/framework-bundle ###
+# Ignora todos os arquivos .env locais e específicos de cada ambiente
+/.env
+/.env.*
+# Exceto os arquivos de exemplo (.dist), que devem ser versionados
+!/.env.dist
+!/.env.*.dist
+
+# Regras antigas que são cobertas pela regra /.env.*, mas podem ser mantidas por clareza
 /.env.local
 /.env.local.php
 /.env.*.local
+
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
