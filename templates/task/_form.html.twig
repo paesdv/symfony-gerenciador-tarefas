@@ -1,0 +1,5 @@
+{# templates/task/_form.html.twig #}
+{{ form_start(form) }}
+    {{ form_widget(form) }}
+<button class="btn btn-success">{{ button_label|default('Salvar') }}</button> {# Alterado de 'Save' para 'Salvar' e adicionada a classe btn-success #}
+{{ form_end(form) }}
